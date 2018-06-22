@@ -13,5 +13,5 @@ Requirements:
 
 Building (Linux):
 
-	invoke qmake in CDDatabase directory
+	invoke qmake in CD-Database-Qt directory
 	invoke make
