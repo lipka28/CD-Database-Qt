@@ -11,7 +11,7 @@ Requirements:
 	- Qt5 (5.10.1 tested)
 	- qmake
 
-Compilation (Linux):
+Building (Linux):
 
 	invoke qmake in CDDatabase directory
 	invoke make
