@@ -1,8 +1,8 @@
-##CDDatabase
+<h2>CDDatabase</h2>
 
 Basic Qt based CD(or whatever) database.
 
-#Build instructions
+<h3>Build instructions</h3>
 
 Requirements:
 
@@ -13,5 +13,5 @@ Requirements:
 
 Compilation (Linux):
 
-	1. invoke qmake in the directory
-	2. invoke make
+	invoke qmake in CDDatabase directory
+	invoke make
