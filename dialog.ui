@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>342</height>
+    <height>481</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -36,7 +36,7 @@
          <item row="2" column="1">
           <widget class="QPushButton" name="changeImageButton">
            <property name="text">
-            <string>Změnit ikonku</string>
+            <string>Change icon</string>
            </property>
           </widget>
          </item>
@@ -83,7 +83,7 @@
          <item row="0" column="0">
           <widget class="QLabel" name="dialogNameNOT">
            <property name="text">
-            <string>Název CD</string>
+            <string>CD Name</string>
            </property>
           </widget>
          </item>
@@ -96,7 +96,7 @@
          <item row="2" column="0">
           <widget class="QLabel" name="dialogYearNOT">
            <property name="text">
-            <string>Rok vydání</string>
+            <string>Year</string>
            </property>
           </widget>
          </item>
@@ -106,7 +106,7 @@
          <item row="3" column="0">
           <widget class="QLabel" name="dialogGenreNOT">
            <property name="text">
-            <string>Žánr</string>
+            <string>Genre</string>
            </property>
           </widget>
          </item>
@@ -116,7 +116,7 @@
          <item row="1" column="0">
           <widget class="QLabel" name="dialogAutorNOT">
            <property name="text">
-            <string>Autor</string>
+            <string>Author</string>
            </property>
           </widget>
          </item>
@@ -129,7 +129,7 @@
    <item>
     <widget class="QLabel" name="songListNOT">
      <property name="text">
-      <string>Senam skladeb:</string>
+      <string>Song list</string>
      </property>
     </widget>
    </item>
@@ -146,14 +146,14 @@
    <item>
     <widget class="QPushButton" name="addLineButton">
      <property name="text">
-      <string>Přidat Skladbu</string>
+      <string>Add song</string>
      </property>
     </widget>
    </item>
    <item>
     <widget class="QPushButton" name="removeLineButton">
      <property name="text">
-      <string>Smazat Skladby</string>
+      <string>Remove all songs</string>
      </property>
     </widget>
    </item>

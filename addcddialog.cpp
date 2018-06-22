@@ -1,5 +1,4 @@
 #include "addcddialog.h"
-//#include "cddatabase.h"
 
 addCdDialog::addCdDialog(QWidget *parent) : QDialog(parent)
 {
@@ -94,7 +93,7 @@ void addCdDialog::on_changeImageButton_clicked()
 {
     QString newName;
     QString oldName;
-    imageLocation = QFileDialog::getOpenFileName(this,"Otevřít soubor","","Obrázky (*.png *.bmp *.jpg *.jpeg)");
+    imageLocation = QFileDialog::getOpenFileName(this,tr("Chose picture"),"",tr("Images (*.png *.bmp *.jpg *.jpeg)"));
     if (!imageLocation.isEmpty()){
         oldName = imageLocation;
 

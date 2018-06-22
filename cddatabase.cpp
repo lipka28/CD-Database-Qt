@@ -11,8 +11,8 @@ cdDatabase::cdDatabase(QObject *parent) : QObject(parent)
     int id = 0;
 
     QMessageBox warning;
-    warning.setText("Nelze nalézt soubor data.txt");
-    warning.setInformativeText("Nepovedlo se nalézt soubor data.txt. Pokud takový soubor máte přesuňte jej do složky s programem a restartujte aplikaci, pokud ne, budes soubor data.txt pro vás automaticky vytvořen");
+    warning.setText(tr("Can't find data.txt"));
+    warning.setInformativeText(tr("Couldn't find data.txt. If you have such file please move it into same directory as this program. If not, new file data.txt will be created."));
 
     QDir imageFolder("thumbs");
 
@@ -46,8 +46,8 @@ cdDatabase::cdDatabase(QObject *parent) : QObject(parent)
             inputFile.close();
 
         }else{
-            warning.setText("Špatný soubor data.txt");
-            warning.setInformativeText("Přiložený soubor data.txt nemusí být vhodný pro čtení tímto programem. Zkontrolujte zda přiložený soubor data.txt je zprávný, nebo jestli obsahuje hlavičku #cdDatabase.");
+            warning.setText(tr("Incompatible data.txt file"));
+            warning.setInformativeText(tr("You might have provided wrong data.txt file. Please check program directory if included file is the right one."));
             warning.exec();
             inputFile.close();
         }
@@ -66,7 +66,7 @@ cdDatabase::~cdDatabase()
     if(outputFile.open(QIODevice::WriteOnly)){
         QTextStream stream(&outputFile);
 
-        stream << "#cdDatabase upravy v tomto souboru se nedoporucuji" << endl;
+        stream << "#cdDatabase manual edits not recommended" << endl;
         for(int i = 0; i < getCount();i++){
 
             stream << getCDName(i) << endl;
